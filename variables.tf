@@ -2,6 +2,10 @@ variable "aws_profile_name" {
   description = "The awscli profile name to use for creds"
 }
 
+variable "aws_creds_file" {
+  description = "The awscli credentials file location on disk"
+}
+
 variable "region" {
   description = "The AWS region to create resources in."
   default = "us-east-1"

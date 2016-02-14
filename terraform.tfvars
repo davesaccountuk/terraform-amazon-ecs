@@ -1,5 +1,6 @@
 region=""
 aws_profile_name=""
+aws_creds_file="/Users/<your_username>/.aws/credentials"
 dockerhub_auth=""
 dockerhub_email=""
 public_key=""
