@@ -1,19 +1,15 @@
-variable "aws_access_key" {
-  description = "The AWS access key."
-}
-
-variable "aws_secret_key" {
-  description = "The AWS secret key."
+variable "aws_profile_name" {
+  description = "The awscli profile name to use for creds"
 }
 
 variable "region" {
   description = "The AWS region to create resources in."
-  default = "eu-west-1"
+  default = "us-east-1"
 }
 
 variable "availability_zones" {
   description = "The availability zones"
-  default = "eu-west-1a,eu-west-1b,eu-west-1c"
+  default = "us-east-1a,us-east-1c,us-east-1d"
 }
 
 variable "ecs_cluster_name" {
@@ -39,12 +35,10 @@ variable "instance_type" {
 
 variable "key_name" {
   description = "The aws ssh key name."
-  default = ""
 }
 
-variable "key_file" {
+variable "public_key" {
   description = "The ssh public key for using with the cloud provider."
-  default = ""
 }
 
 variable "dockerhub_auth" {
