@@ -1,0 +1,6 @@
+region=""
+aws_profile_name=""
+dockerhub_auth=""
+dockerhub_email=""
+public_key=""
+key_name=""

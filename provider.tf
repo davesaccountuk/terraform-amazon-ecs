@@ -1,5 +1,5 @@
 provider "aws" {
-  access_key = "${var.aws_access_key}"
-  secret_key = "${var.aws_secret_key}"
-  region     = "${var.region}"
+  region                   = "${var.region}"
+  shared_credentials_file  = "~/.aws/credentials"
+  profile                  = "${var.aws_profile_name}"
 }
