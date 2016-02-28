@@ -22,7 +22,7 @@ resource "aws_iam_role_policy" "ecs_instance_role_policy" {
  * IAM profile to be used in auto-scaling launch configuration.
  */
 resource "aws_iam_instance_profile" "ecs" {
-  name = "ecs-instance-profile"
+  name = "ecs_instance_profile"
   path = "/"
   roles = ["${aws_iam_role.ecs_role.name}"]
 }
