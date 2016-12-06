@@ -9,12 +9,12 @@ variable "aws_creds_file" {
 
 variable "region" {
 	description = "The AWS region to create resources in."
-	default = "us-east-1"
+	default = "eu-west-1"
 }
 
 variable "availability_zones" {
 	description = "The availability zones"
-	default = "us-east-1a,us-east-1c,us-east-1d"
+	default = "eu-west-1a,eu-west-1b,eu-west-1c"
 }
 
 variable "ecs_cluster_name" {
@@ -27,7 +27,7 @@ variable "amis" {
 	default = {
 		ap-northeast-1 = "ami-aa2d13c4"
 		ap-southeast-2 = "ami-908faaf3"
-		eu-west-1      = "ami-34a21747"
+		eu-west-1      = "ami-af0a6dd8"
 		us-east-1      = "ami-9886a0f2"
 		us-west-1      = "ami-caf581aa"
 		us-west-2      = "ami-1ead497e"
